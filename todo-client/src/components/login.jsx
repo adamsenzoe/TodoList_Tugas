@@ -6,7 +6,7 @@ const Login = () => {
   const { eventHandlers } = useContext(GlobalContext);
   const { handleInput, handleLogin } = eventHandlers;
   return (
-    <div className="container-fluid my-20 lg:my-72 lg:w-[70vw] mx-auto font-mono">
+    <div className="container-fluid lg:w-full mx-auto font-mono">
       <div className="flex flex-col text-center mt-4 mb-2 mx-2 border lg:rounded-md lg:mx-96 ">
         <h1 className="mt-10 mb-4 font-bold text-2xl">Halaman Masuk</h1>
         <form

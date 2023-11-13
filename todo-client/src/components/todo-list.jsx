@@ -87,7 +87,7 @@ export default function TodoList() {
         </div>
       </div>
 
-      <div className="container-fluid font-mono lg:w-[70vw] mx-auto">
+      <div className="container-fluid font-mono lg:w-full mx-auto">
         <div className="flex flex-col justify-center items-center mt-2 mb-4 mx-2 border lg:rounded-md lg:mx-96 ">
           <h1 className="mt-10 mb-4 font-bold text-2xl">Apa To-Do kamu hari ini?</h1>
           <form
