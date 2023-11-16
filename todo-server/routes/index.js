@@ -6,7 +6,7 @@ const todoRoute = require("./todo.routes");
 const { authMiddleware, isAdmin } = require("../middleware/auth.middlewares")
 route.get("/", (req, res) => {
   res.json({
-    message: "selamat datang di server todo sequelize",
+    message: "selamat datang di sequelize",
   });
 });
 
