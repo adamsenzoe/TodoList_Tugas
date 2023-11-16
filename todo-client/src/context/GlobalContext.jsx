@@ -30,7 +30,7 @@ export const GlobalProvider = (props) => {
 
   const todolist = async () => {
     await axios
-      .get("https://rich-teal-stingray-tie.cyclic.app/todos", {
+      .get("https://bewildered-rose-cummerbund.cyclic.app/todos", {
         headers: {
           Authorization: "Bearer " + Cookies.get("token"),
         },
@@ -51,7 +51,7 @@ export const GlobalProvider = (props) => {
 
     if (id && token) {
       await axios
-        .get(`https://rich-teal-stingray-tie.cyclic.app/users/${id}`, {
+        .get(`https://bewildered-rose-cummerbund.cyclic.app/users/${id}`, {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -90,7 +90,7 @@ export const GlobalProvider = (props) => {
     if (currentId === -1) {
       axios
         .post(
-          "https://rich-teal-stingray-tie.cyclic.app//todos",
+          "https://bewildered-rose-cummerbund.cyclic.app/todos",
           { name: todoName },
           {
             headers: {
@@ -121,7 +121,7 @@ export const GlobalProvider = (props) => {
     } else {
       axios
         .put(
-          `https://rich-teal-stingray-tie.cyclic.app/todos/${currentId}`,
+          `https://bewildered-rose-cummerbund.cyclic.app/${currentId}`,
           { name: todoName, isdone: false },
           {
             headers: {
@@ -179,7 +179,7 @@ export const GlobalProvider = (props) => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://rich-teal-stingray-tie.cyclic.app/todos/${id}`, {
+          .delete(`https://bewildered-rose-cummerbund.cyclic.app/todos/${id}`, {
             headers: {
               Authorization: "Bearer " + kukis,
             },
@@ -220,7 +220,7 @@ export const GlobalProvider = (props) => {
   };
   const getActiveTodos = () => {
     axios
-      .get("https://rich-teal-stingray-tie.cyclic.app//todos/", {
+      .get("https://bewildered-rose-cummerbund.cyclic.app/todos/", {
         headers: {
           Authorization: "Bearer " + Cookies.get("token"),
         },
@@ -235,7 +235,7 @@ export const GlobalProvider = (props) => {
 
   const getCompletedTodos = () => {
     axios
-      .get("https://rich-teal-stingray-tie.cyclic.app/todos/", {
+      .get("https://bewildered-rose-cummerbund.cyclic.app/todos/", {
         headers: {
           Authorization: "Bearer " + Cookies.get("token"),
         },
@@ -253,7 +253,7 @@ export const GlobalProvider = (props) => {
     const name = todos.find((todo) => todo.id === id).name;
     axios
       .put(
-        `https://rich-teal-stingray-tie.cyclic.app/todos/${id}`,
+        `https://bewildered-rose-cummerbund.cyclic.app/todos/${id}`,
         { name: name, isdone: isdone },
         {
           headers: {
@@ -321,7 +321,7 @@ export const GlobalProvider = (props) => {
     event.preventDefault();
     let { name, username, email, password } = input;
     axios
-      .post("https://rich-teal-stingray-tie.cyclic.app/auth/register", {
+      .post("https://bewildered-rose-cummerbund.cyclic.app/auth/register", {
         name,
         username,
         email,
@@ -351,7 +351,7 @@ export const GlobalProvider = (props) => {
     event.preventDefault();
     let { username, password } = input;
     axios
-      .post("https://rich-teal-stingray-tie.cyclic.app/auth/login", {
+      .post("https://bewildered-rose-cummerbund.cyclic.app/auth/login", {
         username,
         password,
       })
